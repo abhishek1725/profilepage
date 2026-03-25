@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile | Cloud & AI Engineering</title>
+    <meta name="description"
+        content="A student profile showcasing Software Engineering, Cloud Computing, and AI skills.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <div class="container">
+        <!-- Profile Card -->
+        <header class="glass-card profile-card fade-in">
+            <div class="profile-header">
+                <div class="profile-image">
+                    <img src="profile.jpeg" alt="ABHISHEK A">
+                </div>
+                <div class="profile-info">
+                    <h1>ABHISHEK A</h1>
+                    <h2 class="gradient-text">Software Engineering & AI Student</h2>
+                    <p class="tagline">Passionate about building scalable serverless architectures and intelligent
+                        systems.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/abhishek1725" target="_blank" rel="noopener noreferrer"
+                            aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/abhishek-a-32a427328" target="_blank"
+                            rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="content-grid fade-in flex-delay-1">
+            <!-- About Section -->
+            <section class="glass-card about-section">
+                <h3><i class="fas fa-user-astronaut"></i> About Me</h3>
+                <p>Hi, I’m Abhishek — a passionate BCA student with a strong interest in programming and technology. I
+                    enjoy building practical projects and exploring how software can solve real-world problems.</p>
+                <br>
+                <p>I have experience working with languages like <strong>C, PHP, and Java</strong>, and I’m continuously
+                    improving my skills in web development. I’m especially interested in creating dynamic and
+                    user-friendly applications, including systems for managing data, services, and user interactions.
+                </p>
+                <br>
+                <p>I believe in learning by doing, so I actively work on projects that challenge my thinking and help me
+                    grow as a developer. My goal is to become a skilled software developer and contribute to innovative
+                    and impactful solutions.</p>
+            </section>
+
+            <!-- Skills Section -->
+            <section class="glass-card skills-section">
+                <h3><i class="fas fa-code"></i> Tech Stack</h3>
+                <div class="skills-grid">
+                    <span class="skill-badge cloud"><i class="fas fa-cloud"></i> Cloudflare</span>
+                    <span class="skill-badge cloud"><i class="fab fa-aws"></i> AWS Lambda</span>
+                    <span class="skill-badge ai"><i class="fas fa-robot"></i> OpenAI API</span>
+                    <span class="skill-badge ai"><i class="fas fa-brain"></i> TensorFlow</span>
+                    <span class="skill-badge web"><i class="fab fa-js"></i> JavaScript</span>
+                    <span class="skill-badge web"><i class="fab fa-python"></i> Python</span>
+                    <span class="skill-badge devops"><i class="fas fa-code-branch"></i> Git</span>
+                </div>
+            </section>
+        </div>
+
+        <div class="content-grid fade-in flex-delay-2">
+            <!-- Serverless & API Demo Section -->
+            <section class="glass-card api-demo-section full-width">
+                <h3><i class="fas fa-server"></i> Serverless REST API Demo</h3>
+                <p>This section simulates fetching data from a basic REST API deployed on a serverless edge platform,
+                    integrating system architecture concepts.</p>
+                <div class="api-demo-container">
+                    <button id="fetchDataBtn" class="primary-btn">
+                        <i class="fas fa-bolt"></i> Fetch AI Project Data
+                    </button>
+                    <div id="apiResponse" class="code-block hidden">
+                        <pre><code id="jsonOutput"></code></pre>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer class="fade-in flex-delay-3">
+            <p>Designed for Cloudflare Pages hosting. Powered by Serverless concepts.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
